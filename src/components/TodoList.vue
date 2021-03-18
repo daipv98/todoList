@@ -48,6 +48,7 @@
       <items-component v-for="(item, index) in todos" 
                         :key="index" 
                         :item="item"
+                        :index="index"
                         >
       </items-component>
     </table>

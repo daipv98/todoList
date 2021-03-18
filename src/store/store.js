@@ -37,17 +37,17 @@ const storeData = {
     },
   },
   actions: {
-    storeTodo({ commit }) {
-      commit('storeTodo')
+    storeTodo({ commit }, item) {
+      commit('storeTodo', item)
     },
-    removeTodo({ commit }) {
-      commit('removeTodo')
+    removeTodo({ commit }, item) {
+      commit('removeTodo', item)
     },
-    updateTodo({ commit }) {
-      commit('updateTodo')
+    updateTodo({ commit }, item) {
+      commit('updateTodo', item)
     },
-    editTodo({ commit }) {
-      commit('editTodo')
+    editTodo({ commit }, item) {
+      commit('editTodo', item)
     }
     
   },

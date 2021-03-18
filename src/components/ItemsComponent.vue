@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapMutations } from 'vuex'
 export default {
   name: "items-component",
-  props: ['item'],
-  computed: mapActions(['editTodo','removeTodo']),
+  props: ['item','index'],
+  methods: {...mapActions(['editTodo','removeTodo'])}
 
 };
 </script>
