@@ -11,6 +11,7 @@ const storeData = {
     selectedIndex: null,
     search: '',
   },
+  
   mutations: {
     
     storeTodo(state) {
@@ -36,17 +37,17 @@ const storeData = {
     },
   },
   actions: {
-    storeTodo({ commit }, item) {
-      commit('storeTodo', item)
+    storeTodo({ commit }) {
+      commit('storeTodo')
     },
-    removeTodo({ commit }, item) {
-      commit('removeTodo', item)
+    removeTodo({ commit }) {
+      commit('removeTodo')
     },
-    updateTodo({ commit }, item) {
-      commit('updateTodo', item)
+    updateTodo({ commit }) {
+      commit('updateTodo')
     },
-    editTodo({ commit }, item) {
-      commit('editTodo', item)
+    editTodo({ commit }) {
+      commit('editTodo')
     }
     
   },

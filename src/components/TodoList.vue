@@ -48,7 +48,6 @@
       <items-component v-for="(item, index) in todos" 
                         :key="index" 
                         :item="item"
-                        :index="index"
                         >
       </items-component>
     </table>
@@ -58,7 +57,6 @@
 <script>
 import { mapState, mapGetters, mapMutations, mapActions } from "vuex";
 import ItemsComponent from "./ItemsComponent.vue";
-
 export default {
   name: "component-todoList",
   
@@ -93,7 +91,6 @@ export default {
 input:focus {
   outline: 0;
 }
-
 h1 {
   margin: 40px;
 }
@@ -102,14 +99,12 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 td,
 th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: #dddddd;
 }
